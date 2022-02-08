@@ -20,7 +20,11 @@ fun main() {
     println("How much would you like to tip, we recommend 17.5%? (Put answer in decimal form Eg. 17.5% as .175)")
     tip = readLine()!!.toDouble()
 
+    val totalTax = cost + (cost*tax)
+    val totalTax2 = twoDigits.format(totalTax)
     val totalCost = cost + (cost*tax) + (cost*tip)
     val total = twoDigits.format(totalCost)
+    println("total of all your items: $cost")
+    println("total of all your items with tax: $totalTax2")
     println("Your total with tax and tip is: $total")
 }
