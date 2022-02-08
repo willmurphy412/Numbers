@@ -17,7 +17,7 @@ fun main() {
         cost += userInput
     }while(userInput != 0)
 
-    println("How much would you like to tip? (Put answer in decimal form Eg. 2.5% as .025)")
+    println("How much would you like to tip, we recommend 17.5%? (Put answer in decimal form Eg. 17.5% as .175)")
     tip = readLine()!!.toDouble()
 
     val totalCost = cost + (cost*tax) + (cost*tip)
